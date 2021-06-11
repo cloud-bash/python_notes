@@ -1,0 +1,20 @@
+# infinite loop: one where the condition never changes
+x = 0
+while x % 2 = 0:
+  x = x / 2
+# since 0 % 2 = 0 and 0/2 = 0, the loop will go on forever
+# following makes sure this doesn't happen
+
+while x != 0 and x % 2 = 0:
+  x = x / 2
+  
+  # always consider the different values your variable can take
+  
+  def print_range(start, end):
+	# Loop through the numbers from start to end
+	n = start
+	while n <= end:
+		print(n)
+		n += 1
+# the above n += 1 was essential to prevent an infinite loop
+print_range(1, 5)  # Should print 1 2 3 4 5 (each number on its own line)
