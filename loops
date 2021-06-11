@@ -18,3 +18,7 @@ while x != 0 and x % 2 = 0:
 		n += 1
 # the above n += 1 was essential to prevent an infinite loop
 print_range(1, 5)  # Should print 1 2 3 4 5 (each number on its own line)
+
+# ping is an infinite loop which is broken by an outside condition (Ctrl + C)
+# sometimes you want an infinite loop
+# use an if statement followed by 'break' to stop an infinite loop when a condition is met
